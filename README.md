@@ -40,7 +40,7 @@ sniproxy.conf的域名列表只增不减，如果不想解锁某个域名，在�
 
 # 二、不能解锁的机器：安装dnsmasq
 wget --no-check-certificate -O unlock.sh https://raw.githubusercontent.com/AltonHuo/rule_our/refs/heads/main/unlock.sh && chmod +x unlock.sh  
-./unlock.sh ip
+./unlock.sh 109.176.203.22
 
 2个脚本都安装完后，需要重启你的ss/v2/trojan等代理服务才会生效  
 ping netflix.com  显示的是你的解锁机ip  
