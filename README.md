@@ -103,3 +103,14 @@ iptables配置文件/etc/sysconfig/iptables，修改重启服务生效service ip
 资料  
 https://github.com/myxuchangbin/dnsmasq_sniproxy_install  
 https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/proxy-domains.txt
+
+节点服务器设置
+
+#关闭本地DNS服务
+systemctl stop systemd-resolved && systemctl disable systemd-resolved
+
+#设置DNS服务器
+rm -rf /etc/resolv.conf && echo 'nameserver 146.56.99.155'>/etc/resolv.conf
+
+#默认优先ipv6，直接禁用ipv6
+echo "1" > /proc/sys/net/ipv6/conf/all/disable_ipv6 
