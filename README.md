@@ -114,3 +114,11 @@ rm -rf /etc/resolv.conf && echo 'nameserver 146.56.99.155'>/etc/resolv.conf
 
 #默认优先ipv6，直接禁用ipv6
 echo "1" > /proc/sys/net/ipv6/conf/all/disable_ipv6 
+
+# realm脚本：
+
+更新到最新的realm版本v2.6.2
+
+更新脚本请删除脚本（rm realm.sh）后再次运行以下安装脚本
+
+wget https://raw.githubusercontent.com/qqrrooty/EZrealm/main/realm.sh && chmod +x realm.sh && ./realm.sh
