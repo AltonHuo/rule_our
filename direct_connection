@@ -73,3 +73,5 @@ DOMAIN-SUFFIX,gitee.com,DIRECT // gitee
 DOMAIN-SUFFIX,cdn.lilyemby.my,DIRECT // lily emby CDN
 DOMAIN-SUFFIX,tx.lilyemby.my,DIRECT // lily emby TX CDN 
 DOMAIN-SUFFIX,jeff1992.com,DIRECT // 生图
+DOMAIN-SUFFIX,greencloudvps.com,DIRECT // 绿云
+
